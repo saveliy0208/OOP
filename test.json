@@ -1,1 +1,24 @@
-second merge
+<script type="text/javascript"> 
+var x,y,z,g, min=9999, max=-99999, maxi, mini; 
+mas=Array(); 
+x=6*Math.pow(Math.PI,2)+3*Math.pow(Math.E,8); 
+y=2*Math.cos(4)+Math.cos(12)+8*Math.pow(Math.E,3); 
+z=3*Math.cos(9)+Math.log(5)+Math.sqrt(3); 
+g=2*Math.cos(5)+6*Math.PI+Math.sqrt(12); 
+mas[0]=x; 
+mas[1]=y; 
+mas[2]=z; 
+mas[3]=g; 
+for(var i=0; i<3; i++) 
+{ 
+if(mas[i]<min) 
+{min=mas[i]; 
+mini=i; 
+} 
+if(mas[i]>max) 
+{max=mas[i]; 
+maxi=i;} 
+} 
+document.write(mas[0]+"<br>"+mas[1]+"<br>"+mas[2]+"<br>"+mas[3]+"<br>"); 
+document.write("max знач= "+max+"<br>"+"min знач= "+min+"<br>"+" индекс max знач= "+maxi+"<br>"+"индекс min знач= "+mini+"<br>"); 
+</script>
